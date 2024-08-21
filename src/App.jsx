@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import ProjectTemplate from './components/ProjectTemplate'
-import Header from './components/Header.JSX';
+import Header from './components/Header.jsx';
 
 // Project pictures
 import firstProject from './assets/projectpic-test.png'
