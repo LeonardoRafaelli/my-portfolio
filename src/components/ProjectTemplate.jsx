@@ -1,11 +1,30 @@
+import { useState } from "react"
 
 
-export default function ProjectTemplate({imgSrc, projectName, stack}){
+export default function ProjectTemplate(
+    { imgSrc, projectName, stack, children }
+) {
+
+    const [openPopup, setOpenPopup] = useState(false);
+
+    function togglePopup(){
+        setOpenPopup(true);
+    }
+
+    function closePopup(clickEvent){
+        if(isCorrectTarget(clickEvent)) {
+            setOpenPopup(false)
+        }
+    }
+
+    function isCorrectTarget(clickEvent) {
+        return clickEvent.target.classList.contains("close-popup");
+    }
 
     return (
-        <div className="flex basis-[21%] justify-center transition transform hover:-translate-y-5 hover:cursor-pointer">
-            <div className=" 
-                h-60
+        <div className="flex basis-[21%] justify-center">
+            <div className="transition-transform duration-200 hover:-translate-y-1 hover:cursor-pointer 
+                h-52
                 w-[90%]
                 px-[2px]
                 py-px
@@ -14,8 +33,8 @@ export default function ProjectTemplate({imgSrc, projectName, stack}){
                 bg-opaclight
                 dark:bg-opacdark
                 rounded-lg
-                
                 "
+                onClick={togglePopup}
             >
                 <div className="
                     flex-[4]
@@ -40,12 +59,16 @@ export default function ProjectTemplate({imgSrc, projectName, stack}){
                         ">
                         {projectName}
                     </div>
-                    <img src={imgSrc} className="rounded-lg opacity-50"/>
+                    <img src={imgSrc} className="rounded-lg opacity-60" />
                 </div>
-                
+
                 <div className="flex-1 p-4 rounded-b-lg bg-lightgray dark:bg-dark">
                     {stack}
                 </div>
+            </div>
+
+            <div onClick={closePopup}>
+                {openPopup && children}
             </div>
         </div>
     )

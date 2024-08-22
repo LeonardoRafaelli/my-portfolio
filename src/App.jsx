@@ -1,9 +1,6 @@
 import { useEffect, useState } from 'react'
-import ProjectTemplate from './components/ProjectTemplate'
 import Header from './components/Header.jsx';
-
-// Project pictures
-import firstProject from './assets/projectpic-test.png'
+import MyProjects from './components/Projects.jsx';
 
 function App() {
   const [appTheme, setAppTheme] = useState('light');
@@ -42,11 +39,7 @@ function App() {
     <div className={`${themeModeCSS} font-standard min-h-screen w-full`}>
       <Header switchAppTheme={switchAppTheme} appTheme={appTheme}/>
       <div className='mx-6 grid grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-x-2 gap-y-16'>
-        <ProjectTemplate projectName={"Project name"} stack={"List of imgs"} imgSrc={firstProject}/>
-        <ProjectTemplate projectName={"Project name"} stack={"List of imgs"} imgSrc={firstProject}/>
-        <ProjectTemplate projectName={"Project name"} stack={"List of imgs"} imgSrc={firstProject}/>
-        <ProjectTemplate projectName={"Project name"} stack={"List of imgs"} imgSrc={firstProject}/>
-        <ProjectTemplate projectName={"Project name"} stack={"List of imgs"} imgSrc={firstProject}/>
+        <MyProjects/>
       </div>
     </div>
   )

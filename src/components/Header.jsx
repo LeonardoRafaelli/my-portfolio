@@ -8,15 +8,18 @@ export default function Header({switchAppTheme, appTheme}) {
         <header
             className="
             h-14
-            mb-6
+            mb-14
             flex
             justify-between
             "
         >
-            <div className="w-1/2 pl-6 flex items-center font-signature text-2xl font-bold">
+            <div className="flex-1 pl-6 flex items-center font-signature text-2xl font-bold">
                 Leonardo Rafaelli
             </div>
-            <div className="w-1/2 pr-6 flex items-center justify-end">
+            <div className="flex-1 flex items-center justify-center">
+                <p>My portfolio : )</p>
+            </div>
+            <div className="flex-1 pr-6 flex items-center justify-end">
                 <button
                    onClick={switchAppTheme}
                    >
