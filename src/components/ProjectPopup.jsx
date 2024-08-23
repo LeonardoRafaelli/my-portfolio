@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Divider from "./Divider";
 
 export default function ProjectPopup({children}) {

@@ -26,13 +26,12 @@ export default function ProjectTemplate(
             <div className="transition-transform duration-200 hover:-translate-y-1 hover:cursor-pointer 
                 h-52
                 w-[90%]
-                px-[2px]
-                py-px
                 flex
                 flex-col
                 bg-opaclight
                 dark:bg-opacdark
                 rounded-lg
+                no-scrollbar
                 "
                 onClick={togglePopup}
             >
@@ -62,8 +61,10 @@ export default function ProjectTemplate(
                     <img src={imgSrc} className="rounded-lg opacity-60" />
                 </div>
 
-                <div className="flex-1 p-4 rounded-b-lg bg-lightgray dark:bg-dark">
-                    {stack}
+                <div className="flex-1 flex p-2 overflow-x-scroll rounded-b-lg bg-lightgray dark:bg-dark">
+                    {stack.map((stackIconSrc, i) => (
+                        <img className="min-w-8 mr-4" src={stackIconSrc} key={i}/>
+                    ))}
                 </div>
             </div>
 

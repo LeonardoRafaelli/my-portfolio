@@ -13,6 +13,8 @@ export default {
       'dark': '#241F26',
       'darkgray': '#231E25',
       'opacdark': '#46454a',
+
+      'link': '#1e40af',
     },
 
     extend: {

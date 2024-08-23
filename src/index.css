@@ -33,3 +33,33 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+
+
+.no-scrollbar ::-webkit-scrollbar-track {
+  background: #CEDADA;
+}
+
+/* Handle */
+.no-scrollbar ::-webkit-scrollbar-thumb {
+  background: #CEDADA;
+}
+
+/* Handle on hover */
+.no-scrollbar ::-webkit-scrollbar-thumb:hover {
+  background: #CEDADA;
+}
+
+.dark .no-scrollbar ::-webkit-scrollbar-track {
+  background: #241F26;
+}
+
+/* Handle */
+.dark .no-scrollbar ::-webkit-scrollbar-thumb {
+  background: #241F26;
+}
+
+/* Handle on hover */
+.dark .no-scrollbar ::-webkit-scrollbar-thumb:hover {
+  background: #241F26;
+}
