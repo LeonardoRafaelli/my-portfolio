@@ -38,7 +38,7 @@ function App() {
   return (
     <div className={`${themeModeCSS} font-standard min-h-screen w-full`}>
       <Header switchAppTheme={switchAppTheme} appTheme={appTheme}/>
-      <div className='mx-6 grid grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-x-2 gap-y-16'>
+      <div className='mx-6 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-x-2 gap-y-16'>
         <MyProjects/>
       </div>
     </div>

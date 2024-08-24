@@ -24,7 +24,7 @@ export default function PopupSectionImgs({imgs}) {
         setCurrentIndex(currentIndex + 1)
     }
 
-    const btnNavigationStyle = "disabled:opacity-30 absolute top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-lg";
+    const btnNavigationStyle = "disabled:opacity-30 absolute top-1/2 transform -translate-y-1/2 bg-opacdark bg-opacity-60 hover:bg-opacity-75 text-white p-2 rounded-lg";
 
     return (
         <div className="relative w-full max-w-2xl mx-auto">

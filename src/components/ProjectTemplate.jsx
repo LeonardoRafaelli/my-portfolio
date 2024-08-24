@@ -24,7 +24,7 @@ export default function ProjectTemplate(
     return (
         <div className="flex basis-[21%] justify-center">
             <div className="transition-transform duration-200 hover:-translate-y-1 hover:cursor-pointer 
-                h-52
+                h-44
                 w-[90%]
                 flex
                 flex-col
@@ -49,6 +49,7 @@ export default function ProjectTemplate(
                         absolute
                         flex
                         items-end
+                        text-sm
                         rounded-t-lg
                         bg-gradient-to-t
                         from-lightgray
@@ -63,7 +64,7 @@ export default function ProjectTemplate(
 
                 <div className="flex-1 flex p-2 overflow-x-scroll rounded-b-lg bg-lightgray dark:bg-dark">
                     {stack.map((stackIconSrc, i) => (
-                        <img className="min-w-8 mr-4" src={stackIconSrc} key={i}/>
+                        <img className="min-w-6 mr-4" src={stackIconSrc} key={i}/>
                     ))}
                 </div>
             </div>
