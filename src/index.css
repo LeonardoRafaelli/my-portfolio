@@ -52,11 +52,11 @@
 }
 
 .dark .hide-scrollbar ::-webkit-scrollbar-track {
-  background: theme(colors.link);
+  background: theme(colors.dark);
 }
 
 .dark .hide-scrollbar ::-webkit-scrollbar-thumb {
-  background: theme(colors.link);
+  background: theme(colors.dark);
 }
 
 .dark .hide-scrollbar ::-webkit-scrollbar-thumb:hover {
