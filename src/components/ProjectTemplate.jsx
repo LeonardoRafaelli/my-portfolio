@@ -31,7 +31,7 @@ export default function ProjectTemplate(
                 bg-opaclight
                 dark:bg-opacdark
                 rounded-lg
-                no-scrollbar
+                hide-scrollbar
                 "
                 onClick={togglePopup}
             >
@@ -53,7 +53,7 @@ export default function ProjectTemplate(
                         bg-gradient-to-t
                         from-lightgray
                         to-40%
-                        dark:from-darkgray
+                        dark:from-dark
                         dark:to-40%
                         ">
                         {projectName}

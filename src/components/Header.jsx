@@ -13,10 +13,10 @@ export default function Header({switchAppTheme, appTheme}) {
             justify-between
             "
         >
-            <div className="flex-1 pl-6 flex items-center font-signature text-2xl font-bold">
+            <div className="flex-1 pl-6 flex items-center font-signature text-xl font-bold">
                 Leonardo Rafaelli
             </div>
-            <div className="flex-1 flex items-center justify-center">
+            <div className="flex-1 text-sm flex items-center justify-center">
                 <p>My portfolio : )</p>
             </div>
             <div className="flex-1 pr-6 flex items-center justify-end">

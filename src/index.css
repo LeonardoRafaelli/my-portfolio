@@ -7,59 +7,58 @@
   padding: 0;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-  background: #acb4b6;
+  background: theme(colors.opaclight);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 .dark ::-webkit-scrollbar-track {
-  background: #46454a;
+  background: theme(colors.opacdark);
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 3px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
 
-
-.no-scrollbar ::-webkit-scrollbar-track {
-  background: #CEDADA;
+// Cards x scrollbar
+.hide-scrollbar ::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
 }
 
-/* Handle */
-.no-scrollbar ::-webkit-scrollbar-thumb {
-  background: #CEDADA;
+.hide-scrollbar ::-webkit-scrollbar-track {
+  background: theme(colors.light);
 }
 
-/* Handle on hover */
-.no-scrollbar ::-webkit-scrollbar-thumb:hover {
-  background: #CEDADA;
+
+.hide-scrollbar ::-webkit-scrollbar-thumb {
+  background: theme(colors.light);
 }
 
-.dark .no-scrollbar ::-webkit-scrollbar-track {
-  background: #241F26;
+
+.hide-scrollbar ::-webkit-scrollbar-thumb:hover {
+  background: theme(colors.light);
 }
 
-/* Handle */
-.dark .no-scrollbar ::-webkit-scrollbar-thumb {
-  background: #241F26;
+.dark .hide-scrollbar ::-webkit-scrollbar-track {
+  background: theme(colors.link);
 }
 
-/* Handle on hover */
-.dark .no-scrollbar ::-webkit-scrollbar-thumb:hover {
-  background: #241F26;
+.dark .hide-scrollbar ::-webkit-scrollbar-thumb {
+  background: theme(colors.link);
+}
+
+.dark .hide-scrollbar ::-webkit-scrollbar-thumb:hover {
+  background: theme(colors.dark)
 }
