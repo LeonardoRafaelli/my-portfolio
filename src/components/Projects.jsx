@@ -3,10 +3,11 @@ import ProjectPopup from "./ProjectPopup"
 import PopupSectionImgs from "./PopupSectionImgs";
 import PopupSectionTexts from "./PopupSectionTexts";
 import PopupSectionVideo from "./PopupSectionVideo";
-import githubIcon from "../assets/stackIcons/github-original.svg"
+import CardStackIcons from "./CardStackIcons";
+import githubIcon from "../assets/github-original.svg";
+import linkIcon from "../assets/external-link-icon.png";
 
 import MyProjects from "../MyProjects";
-import CardStackIcons from "./CardStackIcons";
 
 export default function Projects() {
 
@@ -21,9 +22,14 @@ export default function Projects() {
                                 {project.name}
                             </h1>
                             <div className="flex-1 flex justify-end">
-                                <a href={project.githubLink}>
-                                    <img className="w-8 hover:brightness-200 transition duration-400" src={githubIcon}/>
+                                <a href={project.githubLink} className="w-8 h-min">
+                                    <img className="hover:brightness-200 transition duration-400 select-none" src={githubIcon}/>
                                 </a>
+                                {project.outsideLink && 
+                                    <a href={project.outsideLink} className="w-4 h-min ml-4">
+                                        <img className="hover:brightness-200 transition duration-400 select-none" src={linkIcon}></img>
+                                    </a>
+                                }
                             </div>
                         </div>
                         <p className='text-sm'>

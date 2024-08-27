@@ -8,8 +8,7 @@ function App() {
   const [appTheme, setAppTheme] = useState('light');
 
   useEffect(() => {
-    console.log("STACKICONS", StackIcons);
-    // Save theme in local storage
+    
     let lsTheme = getThemeOnLS()
     if(lsTheme != null) {
       setAppTheme(lsTheme)

@@ -13,7 +13,7 @@ const MyProjects =
         id: 1,
         name: "My Portfolio",
         githubLink: "https://github.com/LeonardoRafaelli/my-portfolio",
-        websiteLink: "",
+        outsideLink: "https://my-portfolio-wheat-pi.vercel.app/",
         stack: [StackIcons.react, StackIcons.tailwindcss, StackIcons.vercel],
         cardImg: myPortfolio1,
         description: <p>After applying for don't know how many jobs as 
@@ -44,5 +44,32 @@ const MyProjects =
     },
 ]
 
+// TEMPLATE
+// {
+//     id: 1,
+//     name: "",
+//     githubLink: "",
+//     outsideLink: "",
+//     stack: [StackIcons.react],
+//     cardImg: myPortfolio1,
+//     description: <p>After applying for don't know how many jobs as 
+//     Back/Front/Fullstack/Java/React/C# Developer and so on and
+//     not getting a single chance to show what I'm capable of,
+//     I finally decided to create my own portfolio site, so I could include it in my Resume
+//     and no more words would be needed to be said to prove my hard skills. &#x1f917;</p>,
+//     popupSection: {
+//         imgs: [myPortfolio1, myPortfolio3, myPortfolio2],
+//         videoUrl: "https://www.youtube-nocookie.com/embed/6NvXdmYXeQ4?si=jDpdhewj8STvn4uF",
+//         texts: [
+//             {
+//                 sectionTitle: "Development",
+//                 sectionParagraphs: [
+//                 <p>Developed in 3 </p>,
+//                 <p><b>So, I did it.</b></p>
+//                 ],
+//             }
+//         ],
+//     },
+// },
 
 export default MyProjects;
