@@ -1,4 +1,4 @@
-import ProjectTemplate from "./ProjectTemplate"
+import ProjectCard from "./ProjectCard"
 import ProjectPopup from "./ProjectPopup"
 import PopupSectionImgs from "./PopupSectionImgs";
 import PopupSectionTexts from "./PopupSectionTexts";
@@ -14,7 +14,7 @@ export default function Projects() {
 
     return (<>
         {MyProjects.map((project, i) => (
-            <ProjectTemplate key={i} projectName={project.name} stack={project.stack} imgSrc={project.cardImg}>
+            <ProjectCard key={i} projectName={project.name} stack={project.stack} imgSrc={project.cardImg}>
                 <ProjectPopup>
                     <div>
                         <div className="flex">
@@ -41,7 +41,7 @@ export default function Projects() {
                         <CardStackIcons stack={project.stack} isInPopup={true}/>
                     </div>
                 </ProjectPopup>
-            </ProjectTemplate>
+            </ProjectCard>
         ))}
         
     </>
