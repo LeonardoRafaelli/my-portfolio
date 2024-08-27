@@ -7,7 +7,7 @@ import tailwindcssWordmark from '../assets/stackIcons/tailwindcss-original-wordm
 import jsOriginal from '../assets/stackIcons/javascript-original.svg';
 import vercelOriginal from '../assets/stackIcons/vercel-original.svg';
 import vercelWordmark from '../assets/stackIcons/vercel-original-wordmark.svg';
-import cSharpOriginal from '../assets/stackIcons/cSharp-original.svg';
+import cSharpOriginal from '../assets/stackIcons/csharp-original.svg';
 import dotNetOriginal from '../assets/stackIcons/dotnet-core.png';
 import dotNetMauiOriginal from '../assets/stackIcons/dotnet-maui.png';
 import figmaOriginal from '../assets/stackIcons/figma-original.svg';
