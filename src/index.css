@@ -7,9 +7,15 @@
   padding: 0;
 }
 
+@layer base {
+  h2 {
+    @apply text-lg font-semibold mb-3
+  }
+}
+
 ::-webkit-scrollbar {
   width: 8px;
-  height: 2px;
+  height: 3px;
 }
 
 ::-webkit-scrollbar-track {
@@ -32,8 +38,13 @@
 }
 
 
-/* Cards scrollbar */
+.select-none {
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
 
+/* Cards scrollbar */
 .hide-scrollbar ::-webkit-scrollbar-track {
   background: theme(colors.light);
 }
@@ -45,7 +56,7 @@
 
 
 .hide-scrollbar ::-webkit-scrollbar-thumb:hover {
-  background: theme(colors.light);
+  background: theme(colors.opacdark);
 }
 
 .dark .hide-scrollbar ::-webkit-scrollbar-track {
@@ -57,5 +68,5 @@
 }
 
 .dark .hide-scrollbar ::-webkit-scrollbar-thumb:hover {
-  background: theme(colors.dark)
+  background: theme(colors.opaclight)
 }

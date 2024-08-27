@@ -16,7 +16,6 @@ export default {
 
       'link': '#1e40af',
     },
-
     extend: {
       fontFamily: {
       'standard': [ 'Inter', 'system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],

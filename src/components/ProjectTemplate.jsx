@@ -1,10 +1,9 @@
-import { useState } from "react"
-
+import { useEffect, useRef, useState } from "react"
+import CardStackIcons from "./CardStackIcons";
 
 export default function ProjectTemplate(
     { imgSrc, projectName, stack, children }
 ) {
-
     const [openPopup, setOpenPopup] = useState(false);
 
     function togglePopup(){
@@ -23,7 +22,7 @@ export default function ProjectTemplate(
 
     return (
         <div className="flex basis-[21%] justify-center">
-            <div className="transition-transform duration-200 hover:-translate-y-1 hover:cursor-pointer 
+            <div className="transition-transform duration-200 hover:-translate-y-1 hover:cursor-pointer
                 h-44
                 w-[90%]
                 flex
@@ -62,11 +61,8 @@ export default function ProjectTemplate(
                     <img src={imgSrc} className="rounded-lg opacity-60" />
                 </div>
 
-                <div className="flex-1 flex p-2 overflow-x-scroll rounded-b-lg bg-lightgray dark:bg-dark">
-                    {stack.map((stackIconSrc, i) => (
-                        <img className="min-w-6 mr-4" src={stackIconSrc} key={i}/>
-                    ))}
-                </div>
+                <CardStackIcons stack={stack} />
+                
             </div>
 
             <div onClick={closePopup}>

@@ -2,10 +2,14 @@ import { useEffect, useState } from 'react'
 import Header from './components/Header.jsx';
 import MyProjects from './components/Projects.jsx';
 
+import StackIcons from './components/StackIcons.jsx';
+
 function App() {
   const [appTheme, setAppTheme] = useState('light');
 
   useEffect(() => {
+    console.log("STACKICONS", StackIcons);
+    // Save theme in local storage
     let lsTheme = getThemeOnLS()
     if(lsTheme != null) {
       setAppTheme(lsTheme)
@@ -36,7 +40,7 @@ function App() {
   const themeModeCSS = `${appTheme} text-dark bg-light dark:text-light dark:bg-dark`; 
 
   return (
-    <div className={`${themeModeCSS} font-standard min-h-screen w-full`}>
+    <div id='holepage' className={`${themeModeCSS} font-standard min-h-screen w-full`}>
       <Header switchAppTheme={switchAppTheme} appTheme={appTheme}/>
       <div className='mx-6 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-x-2 gap-y-16'>
         <MyProjects/>
