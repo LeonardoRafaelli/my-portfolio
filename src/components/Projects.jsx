@@ -8,6 +8,7 @@ import githubIcon from "../assets/github-original.svg";
 import linkIcon from "../assets/external-link-icon.png";
 
 import MyProjects from "../MyProjects";
+import LinkImg from "./LinkImg";
 
 export default function Projects() {
 
@@ -22,17 +23,13 @@ export default function Projects() {
                                 {project.name}
                             </h1>
                             <div className="flex-1 flex justify-end">
-                                <a href={project.githubLink} className="w-8 h-min">
-                                    <img className="hover:brightness-200 transition duration-400 select-none" src={githubIcon}/>
-                                </a>
+                                <LinkImg link={project.githubLink} src={githubIcon} />
                                 {project.outsideLink && 
-                                    <a href={project.outsideLink} className="w-4 h-min ml-4">
-                                        <img className="hover:brightness-200 transition duration-400 select-none" src={linkIcon}></img>
-                                    </a>
+                                    <LinkImg link={project.outsideLink} width={4} ml={4} src={linkIcon}/>
                                 }
                             </div>
                         </div>
-                        <p className='text-sm'>
+                        <p className='text-sm text-justify'>
                             {project.description}
                         </p>
                     </div>

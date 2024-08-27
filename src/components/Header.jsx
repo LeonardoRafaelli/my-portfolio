@@ -2,6 +2,7 @@ import darkThemeIcon from '../assets/theme-icon-dark.png';
 import lightThemeIcon from '../assets/theme-icon-light.png';
 import githubIcon from '../assets/github-original.svg'
 import linkedinIcon from '../assets/linkedin-icon.png'
+import LinkImg from './LinkImg';
 
 export default function Header({switchAppTheme, appTheme}) {
 
@@ -18,12 +19,8 @@ export default function Header({switchAppTheme, appTheme}) {
                 Leonardo Rafaelli
             </div>
             <div className="flex-1 flex items-center justify-center gap-4">
-                <a href='https://github.com/LeonardoRafaelli/'>
-                    <img className='w-8 hover:brightness-50 dark:hover:brightness-150 select-none' src={githubIcon}/>
-                </a>
-                <a href='https://www.linkedin.com/in/leonardo-rafaelli/'>
-                    <img className='w-8 hover:brightness-50 dark:hover:brightness-150 select-none' src={linkedinIcon}/>
-                </a>
+                <LinkImg link={"https://github.com/LeonardoRafaelli/"} src={githubIcon}/>
+                <LinkImg link={"https://www.linkedin.com/in/leonardo-rafaelli/"} src={linkedinIcon} />
             </div>
             <div className="flex-1 pr-6 flex items-center justify-end">
                 <button

@@ -26,8 +26,9 @@ export default function CardStackIcons({ stack, isInPopup }) {
         >
             {stack.map((stackIcon, i) => (
                 <img className="min-w-6 max-w-24 flex mx-3 select-none"
-                    src={isInPopup ? stackIcon.wordmark : stackIcon.original}
+                    src={isInPopup ? (stackIcon.wordmark ?? stackIcon.original) : stackIcon.original}
                     key={i}
+                    title={stackIcon.title}
                     alt={`stack-${i}`}
                 />
             ))}
