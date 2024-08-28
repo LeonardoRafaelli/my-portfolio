@@ -94,11 +94,29 @@ const MyProjects =
             },
         },
         {
-            id: 0,
-            name: "More coming soon",
+            id: 4,
+            name: "SEED",
             stack: [],
             cardImg: "",
-            description: <p></p>,
+            description: <p>Informations will be added soon</p>,
+            popupSection: {
+            },
+        },
+        {
+            id: 5,
+            name: "React to Survive",
+            stack: [],
+            cardImg: "",
+            description: <p>Informations will be added soon</p>,
+            popupSection: {
+            },
+        },
+        {
+            id: 6,
+            name: "RA Puzzle",
+            stack: [],
+            cardImg: "",
+            description: <p>Informations will be added soon</p>,
             popupSection: {
             },
         },
