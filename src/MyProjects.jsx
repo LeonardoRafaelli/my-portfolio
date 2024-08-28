@@ -95,7 +95,8 @@ const MyProjects =
         },
         {
             id: 4,
-            name: "SEED",
+            name: "SEED - Backend",
+            githubLink: "https://github.com/SID-Organization/SEED-Project-Backend",
             stack: [],
             cardImg: "",
             description: <p>Informations will be added soon</p>,
@@ -104,7 +105,8 @@ const MyProjects =
         },
         {
             id: 5,
-            name: "React to Survive",
+            name: "SEED - Frontend",
+            githubLink: "https://github.com/SID-Organization/SEED-Project-Frontend",
             stack: [],
             cardImg: "",
             description: <p>Informations will be added soon</p>,
@@ -113,16 +115,41 @@ const MyProjects =
         },
         {
             id: 6,
-            name: "RA Puzzle",
+            name: "Spring PayPal Integration",
+            githubLink: "https://github.com/LeonardoRafaelli/spring-paypal-integration",
             stack: [],
             cardImg: "",
             description: <p>Informations will be added soon</p>,
             popupSection: {
             },
         },
+        {
+            id: 7,
+            name: "React to Survive",
+            githubLink: "https://github.com/HenriqueCole/react-to-survive",
+            outsideLink: "https://react-to-survive.vercel.app",
+            stack: [],
+            cardImg: "",
+            description: <p>Informations will be added soon</p>,
+            popupSection: {
+            },
+        },
+        {
+            id: 8,
+            name: "RA Puzzle",
+            githubLink: "https://github.com/LeonardoRafaelli/ra-scaperoom/",
+            outsideLink: "https://ra-enigma.vercel.app/",
+            stack: [],
+            cardImg: "",
+            description: <p>Informations will be added soon</p>,
+            popupSection: {
+            },
+        },
+        
     ]
 
 // TEMPLATE
+// TODO: Add Contributors to the projects
 // {
 //     id: 1,
 //     name: "",

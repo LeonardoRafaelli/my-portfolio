@@ -62,7 +62,6 @@ export default function ProjectTemplate(
                 </div>
 
                 <CardStackIcons stack={stack} />
-                
             </div>
 
             <div onClick={closePopup}>

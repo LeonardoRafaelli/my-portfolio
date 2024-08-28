@@ -6,8 +6,8 @@ export default function LinkImg({ link, src, width = 8, ml=0, mr=0}) {
             <img
                 className={`
                     w-${width}
-                    ml-${ml}
-                    mr-${mr}
+                    ${ml && `ml-${ml}`}
+                    ${mr && `mr-${mr}`}
                     hover:brightness-50
                     dark:hover:brightness-150
                     transition

@@ -18,16 +18,20 @@ export default function Projects() {
                 <ProjectPopup>
                     <div>
                         <div className="flex">
-                            <div className="flex-1" />
-                            <h1 className='flex-1 text-2xl text-center font-semibold mb-6'>
-                                {project.name}
-                            </h1>
+                            <div className="flex-1"> </div>
+                            <div className="flex-1 flex justify-center">
+                                <div className='relative text-2xl text-center font-semibold mb-6'>
+                                    { project.name}
+                                    { project.outsideLink &&
+                                        <div className="absolute top-0 right-[-30px]">
+                                            <LinkImg link={project.outsideLink} width={4} src={linkIcon} />
+                                        </div>
+                                    }
+                                </div>
+                            </div>
                             <div className="flex-1 flex justify-end">
                                 { project.githubLink &&
                                     <LinkImg link={project.githubLink} src={githubIcon} />
-                                }
-                                { project.outsideLink &&
-                                    <LinkImg link={project.outsideLink} width={4} ml={4} src={linkIcon} />
                                 }
                             </div>
                         </div>
@@ -38,7 +42,7 @@ export default function Projects() {
                     {project.popupSection.imgs && <PopupSectionImgs imgs={project.popupSection.imgs} />}
                     {project.popupSection.texts && <PopupSectionTexts texts={project.popupSection.texts} />}
                     {project.popupSection.videoUrl && <PopupSectionVideo videoUrl={project.popupSection.videoUrl} />}
-                    {project.stack > 0 && (
+                    {project.stack.length > 0 && (
                         <div>
                             <h2>Project Stack</h2>
                             <CardStackIcons stack={project.stack} isInPopup={true} />
