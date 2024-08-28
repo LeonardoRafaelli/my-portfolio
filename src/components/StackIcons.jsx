@@ -1,3 +1,4 @@
+// Stack Icons Imports
 import javaOriginal from '../assets/stackIcons/java-original.svg';
 import javaWordmark from '../assets/stackIcons/java-original-wordmark.svg';
 import reactOriginal from '../assets/stackIcons/react-original.svg';
