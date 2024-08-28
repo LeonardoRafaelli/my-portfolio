@@ -9,6 +9,13 @@ import myPortfolio3 from "./assets/myPortfolio/myportfolio-ui-light.png"
 import fileWatcher1 from './assets/fileWatcher/pic1.png'
 import fileWatcher2 from './assets/fileWatcher/pic2-ui.png'
 import fileWatcher3 from './assets/fileWatcher/pic3-email.png'
+// MyVocabulary
+import mvPic1 from './assets/myVocabulary/pic-mainpage.png'
+import mvPic2 from './assets/myVocabulary/pic-login.png'
+import mvPic3 from './assets/myVocabulary/pic-learn.png'
+import mvPic4 from './assets/myVocabulary/pic-learnnotblur.png'
+import mvPic5 from './assets/myVocabulary/pic-database.png'
+import mvPic6 from './assets/myVocabulary/pic-aws.png'
 
 const MyProjects =
     [
@@ -58,6 +65,29 @@ const MyProjects =
                             hole design was a match of trying to make the most usable and
                             user-friendly screen, applying my new knowledges, and learning how to code with .NET.</p>,
 
+                        ],
+                    }
+                ],
+            },
+        },
+        {
+            id: 3,
+            name: "My Vocabulary",
+            githubLink: "https://github.com/LeonardoRafaelli/my-portfolio",
+            stack: [StackIcons.java, StackIcons.spring, StackIcons.mysql, StackIcons.docker, StackIcons.aws],
+            cardImg: mvPic1,
+            description: <p>This project was one of which I had most fun coding it. It started as an idea to make an app for myself, that would <i>help me in some of my activities</i>. As by the time I coded this project I was studying german (which I still do, and will probably do forever &#128514;), I decided to make an app for the need to learn german and this was the outcome. &#128516;</p>,
+            popupSection: {
+                imgs: [mvPic2, mvPic3, mvPic4, mvPic5, mvPic6, mvPic1],
+                videoUrl: "https://www.youtube.com/embed/P5Yvi1E0QLI?si=iRx9TRNeF4rT8dob",
+                texts: [
+                    {
+                        sectionTitle: "Development",
+                        sectionParagraphs: [
+                            <p>The development was pretty flowed 	&#x1f468;&#x200d;&#x1f4bb; , I already knew all the tools I was about to use, except for AWS.</p>,
+                            <p>Coding this project, as I used no front-end framework, I reeinforced a lot my knowledge in <b>Spring Security and Thymeleaf.</b></p>,
+                            <p>Also, I could understand a lot more how AWS works, services and terms such <b>EC2</b> (Elastic Cloud), <b>RDS</b> (Relational Database Service) and their instances. It was <i>100%</i> worth to dive in my ideas and code this project.</p>,
+                            
                         ],
                     }
                 ],

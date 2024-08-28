@@ -2,7 +2,7 @@
 
 export default function LinkImg({ link, src, width = 8, ml=0, mr=0}) {
     return (
-        <a href={link} className="h-min">
+        <a href={link} target="_blank" className="h-min">
             <img
                 className={`
                     w-${width}

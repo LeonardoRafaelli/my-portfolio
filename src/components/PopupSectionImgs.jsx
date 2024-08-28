@@ -42,7 +42,7 @@ export default function PopupSectionImgs({ imgs }) {
                             transform ${getSlideClass(index)}
                             `}
                         >
-                            <img src={slide} className="object-cover" />
+                            <img src={slide} className="object-cover rounded-lg" />
                         </div>
                     ))}
                     <div className="absolute w-full top-[95%] flex justify-center gap-4">

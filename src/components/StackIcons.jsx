@@ -12,6 +12,13 @@ import dotNetOriginal from '../assets/stackIcons/dotnet-core.png';
 import dotNetMauiOriginal from '../assets/stackIcons/dotnet-maui.png';
 import figmaOriginal from '../assets/stackIcons/figma-original.svg';
 import llvmOriginal from '../assets/stackIcons/llvm-original.svg';
+import springOriginal from '../assets/stackIcons/spring-original.svg';
+import springWordmark from '../assets/stackIcons/spring-original-wordmark.svg';
+import mysqlOriginal from '../assets/stackIcons/mysql-original.svg'
+import mysqlWordmark from '../assets/stackIcons/mysql-original-wordmark.svg'
+import dockerOriginal from '../assets/stackIcons/docker-original.svg'
+import dockerWordmark from '../assets/stackIcons/docker-original-wordmark.svg'
+import awsWordmark from '../assets/stackIcons/amazonwebservices-original-wordmark.svg'
 
 const StackIcons = {
     java: {
@@ -57,6 +64,25 @@ const StackIcons = {
     llvm: {
         title: "LLVM",
         original: llvmOriginal
+    },
+    spring: {
+        title: "Spring Boot",
+        original: springOriginal,
+        wordmark: springWordmark
+    },
+    mysql: {
+        title: "MySQL Database",
+        original: mysqlOriginal,
+        wordmark: mysqlWordmark
+    },
+    docker: {
+        title: "Docker",
+        original: dockerOriginal,
+        wordmark: dockerWordmark
+    },
+    aws: {
+        title: "AWS - Amazon Web Services",
+        original: awsWordmark
     }
 }
 
