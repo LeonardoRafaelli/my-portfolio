@@ -93,6 +93,15 @@ const MyProjects =
                 ],
             },
         },
+        {
+            id: 0,
+            name: "More coming soon",
+            stack: [],
+            cardImg: "",
+            description: <p></p>,
+            popupSection: {
+            },
+        },
     ]
 
 // TEMPLATE

@@ -23,9 +23,11 @@ export default function Projects() {
                                 {project.name}
                             </h1>
                             <div className="flex-1 flex justify-end">
-                                <LinkImg link={project.githubLink} src={githubIcon} />
-                                {project.outsideLink && 
-                                    <LinkImg link={project.outsideLink} width={4} ml={4} src={linkIcon}/>
+                                { project.githubLink &&
+                                    <LinkImg link={project.githubLink} src={githubIcon} />
+                                }
+                                { project.outsideLink &&
+                                    <LinkImg link={project.outsideLink} width={4} ml={4} src={linkIcon} />
                                 }
                             </div>
                         </div>
@@ -33,17 +35,19 @@ export default function Projects() {
                             {project.description}
                         </p>
                     </div>
-                    {project.popupSection.imgs && <PopupSectionImgs imgs={project.popupSection.imgs} /> }
+                    {project.popupSection.imgs && <PopupSectionImgs imgs={project.popupSection.imgs} />}
                     {project.popupSection.texts && <PopupSectionTexts texts={project.popupSection.texts} />}
                     {project.popupSection.videoUrl && <PopupSectionVideo videoUrl={project.popupSection.videoUrl} />}
-                    <div>
-                        <h2>Project Stack</h2>
-                        <CardStackIcons stack={project.stack} isInPopup={true}/>
-                    </div>
+                    {project.stack > 0 && (
+                        <div>
+                            <h2>Project Stack</h2>
+                            <CardStackIcons stack={project.stack} isInPopup={true} />
+                        </div>
+                    )}
                 </ProjectPopup>
             </ProjectCard>
         ))}
-        
+
     </>
     )
 }
