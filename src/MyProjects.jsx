@@ -18,7 +18,7 @@ const MyProjects =
             githubLink: "https://github.com/LeonardoRafaelli/my-portfolio",
             stack: [StackIcons.react, StackIcons.tailwindcss, StackIcons.vercel],
             cardImg: myPortfolio1,
-            description: <p>For the porpouse of making it easier to show what I'm capable of and what all projects have I already done, I finally decided to code my portfolio. &#x1f917;</p>,
+            description: <p>For the porpouse of making it easier to show what I'm capable of and all the projects I have already done, I finally decided to code my own portfolio and make it a project out of it. &#x1f917;</p>,
             popupSection: {
                 imgs: [myPortfolio1, myPortfolio3, myPortfolio2],
                 texts: [
@@ -54,7 +54,7 @@ const MyProjects =
                         sectionTitle: "Development",
                         sectionParagraphs: [
                             <p>During the development of the FileWatcher, I was studying software usability
-                            in the Information System Programming Apprenticeship course. Therefore, the
+                            in the Information System Programming Apprenticeship course, therefore, the
                             hole design was a match of trying to make the most usable and
                             user-friendly screen, applying my new knowledges, and learning how to code with .NET.</p>,
 
