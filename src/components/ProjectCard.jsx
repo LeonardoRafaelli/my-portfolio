@@ -49,12 +49,12 @@ export default function ProjectTemplate(
                         flex
                         items-end
                         text-sm
+                        font-semibold
                         rounded-t-lg
                         bg-gradient-to-t
                         from-lightgray
-                        to-40%
                         dark:from-dark
-                        dark:to-40%
+                        to-80%
                         ">
                         {projectName}
                     </div>

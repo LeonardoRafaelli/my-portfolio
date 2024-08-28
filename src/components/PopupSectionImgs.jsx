@@ -23,7 +23,7 @@ export default function PopupSectionImgs({ imgs }) {
         setCurrentIndex(currentIndex + 1)
     }
 
-    const btnNavigationStyle = "disabled:opacity-30 absolute top-1/2 transform -translate-y-1/2 bg-opacdark bg-opacity-60 hover:bg-opacity-75 text-white p-2 rounded-lg";
+    const btnNavigationStyle = "disabled:opacity-30 absolute top-1/2 transform -translate-y-1/2 bg-light bg-opacity-80 hover:bg-opacity-85 text-dark p-2 rounded-full border border-dark border-opacity-70";
 
     return (
         <>
@@ -45,6 +45,16 @@ export default function PopupSectionImgs({ imgs }) {
                             <img src={slide} className="object-cover" />
                         </div>
                     ))}
+                    <div className="absolute w-full top-[95%] flex justify-center gap-4">
+                        {imgs.map((imgSrc, index) => (
+                            <p
+                                className={`w-4 h-1 rounded-full cursor-pointer
+                                    ${currentIndex == index ? "bg-[#888]" : "bg-[#555]"}`
+                                }
+                                onClick={() => setCurrentIndex(index)}
+                            ></p>
+                        ))}
+                    </div>
                 </div>
 
                 <button

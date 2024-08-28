@@ -18,11 +18,7 @@ const MyProjects =
             githubLink: "https://github.com/LeonardoRafaelli/my-portfolio",
             stack: [StackIcons.react, StackIcons.tailwindcss, StackIcons.vercel],
             cardImg: myPortfolio1,
-            description: <p>After applying for don't know how many jobs as
-                a Developer and
-                not getting a single chance to show what I'm capable of,
-                I finally decided to create my own portfolio site, so I could include it in my Resume
-                and no more words would be needed to be said to prove my hard skills. &#x1f917;</p>,
+            description: <p>For the porpouse of making it easier to show what I'm capable of and what all projects have I already done, I finally decided to code my portfolio. &#x1f917;</p>,
             popupSection: {
                 imgs: [myPortfolio1, myPortfolio3, myPortfolio2],
                 texts: [
@@ -35,7 +31,7 @@ const MyProjects =
                                 so other people can also use it?&#x1f914;".</p>,
                             <p><b>So, I did it.</b> Still not so simple as just inputing your data, but with a bit of knowledge
                                 of how JSONs, React and Git work, anyone can use it.</p>,
-                            <p>It's only necessary to clone <a className="underline" href="https://vercel.com/">my repo</a> at the <i>start</i> branch,
+                            <p>It's only necessary to clone <a className="underline" href="https://github.com/LeonardoRafaelli/my-portfolio/">my repo</a> at the <i>start</i> branch,
                                 update the object on 'MyProjects.jsx' file with your own files and informations
                                 and host it on <a className="underline" href="https://vercel.com/">vercel</a>.</p>
                         ],
