@@ -3,8 +3,7 @@ import { useEffect, useState } from "react";
 export default function PopupSectionImgs({ imgs }) {
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [isZoomClicked, setIsZoomClicked] = useState(false);
-    const [zoomedImg, setZoomedImg] = useState(<></>);
+    const [imgSrcZoomed, setImgSrcZoomed] = useState();
 
     function getSlideClass(slideIndex) {
         if (slideIndex == currentIndex) {
@@ -16,19 +15,6 @@ export default function PopupSectionImgs({ imgs }) {
         else {
             return "translate-x-full"
         }
-    }
-
-    useEffect(() => {
-        console.log(isZoomClicked)
-        console.log(zoomedImg)
-    }, [isZoomClicked])
-
-    function zoomClickedImage(imgSrc) {
-        setZoomedImg(<img src={imgSrc}
-            className="w-[70%] fixed top-[5%] left-[15%] rounded-lg z-30 cursor-zoom-out"
-            onClick={() => setIsZoomClicked(false)}
-        />)
-        setIsZoomClicked(true);
     }
 
     function prevSlide() {
@@ -43,7 +29,12 @@ export default function PopupSectionImgs({ imgs }) {
     return (
         <>
             <h2>Images</h2>
-            {isZoomClicked && zoomedImg}
+            {imgSrcZoomed && (
+                <img src={imgSrcZoomed}
+                    className="w-[70%] fixed top-[5%] left-[15%] rounded-lg z-30 cursor-zoom-out"
+                    onClick={() => setImgSrcZoomed(null)}
+                />
+            )}
             <div className="relative w-full max-w-2xl mx-auto">
                 <div className="overflow-hidden relative h-72 rounded-lg">
                     {imgs.map((imgSrc, index) => (
@@ -60,7 +51,7 @@ export default function PopupSectionImgs({ imgs }) {
                         >
                             <img src={imgSrc} 
                                 className="object-cover rounded-lg cursor-zoom-in"
-                                onClick={() => zoomClickedImage(imgSrc)}
+                                onClick={() => setImgSrcZoomed(imgSrc)}
                             />
                         </div>
                     ))}
