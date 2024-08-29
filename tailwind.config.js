@@ -6,9 +6,9 @@ export default {
   ],
   theme: {
     colors: {
-      'light': '#CEDADA',
-      'lightgray': '#CCD9D9',
-      'opaclight': '#acb4b6',
+      'light': '#FFF', // CEDADA
+      'lightgray': '#FDFDFD', // CCD9D9
+      'opaclight': '#CEDADA', // ACB4B6
 
       'dark': '#241F26',
       'darkgray': '#231E25',
