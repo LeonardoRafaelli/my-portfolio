@@ -23,7 +23,7 @@ const MyProjects =
             id: 1,
             name: "My Portfolio",
             githubLink: "https://github.com/LeonardoRafaelli/my-portfolio",
-            stack: [StackIcons.react, StackIcons.tailwindcss, StackIcons.vercel],
+            stack: [StackIcons.react, StackIcons.tailwindcss, StackIcons.vercel, StackIcons.vscode],
             cardImg: myPortfolio1,
             description: <p>For the porpouse of making it easier to show what I'm capable of and all the projects I have already done, I finally decided to code my own portfolio and make it a project out of it. &#x1f917;</p>,
             popupSection: {
@@ -50,7 +50,7 @@ const MyProjects =
             id: 2,
             name: "File Watcher",
             githubLink: "https://github.com/LeonardoRafaelli/Filewatcher",
-            stack: [StackIcons.cSharp, StackIcons.dotNet, StackIcons.dotNetMaui, StackIcons.figma, StackIcons.llvm],
+            stack: [StackIcons.cSharp, StackIcons.dotNet, StackIcons.dotNetMaui, StackIcons.visualstudio, StackIcons.figma, StackIcons.llvm],
             cardImg: fileWatcher2,
             description: <p>FileWatcher is a <b>cross-platform</b> application, which was built using <i>.NET Maui</i> and designed to monitor changes in files or folders. The application provides a user-friendly interface to select and monitor a specific file or folder, offering real-time updates on changes and notifications. This application was destinated to the final project of the 'CS50 - Introduction to Computer Science' course.</p>,
             popupSection: {
@@ -74,7 +74,7 @@ const MyProjects =
             id: 3,
             name: "My Vocabulary",
             githubLink: "https://github.com/LeonardoRafaelli/my-portfolio",
-            stack: [StackIcons.java, StackIcons.spring, StackIcons.mysql, StackIcons.docker, StackIcons.aws],
+            stack: [StackIcons.java, StackIcons.spring, StackIcons.maven, StackIcons.mysql, StackIcons.docker, StackIcons.aws, StackIcons.intellij],
             cardImg: mvPic1,
             description: <p>This project was one of which I had most fun coding it. It started as an idea to make an app for myself, that would <i>help me in some of my activities</i>. As by the time I coded this project I was studying german (which I still do, and will probably do forever &#128514;), I decided to make an app for the need to learn german and this was the outcome. &#128516;</p>,
             popupSection: {
@@ -97,17 +97,31 @@ const MyProjects =
             id: 4,
             name: "SEED - Backend",
             githubLink: "https://github.com/SID-Organization/SEED-Project-Backend",
-            stack: [],
+            stack: [StackIcons.java, StackIcons.spring, StackIcons.maven, StackIcons.mysql, StackIcons.intellij],
             cardImg: "",
             description: <p>Informations will be added soon</p>,
             popupSection: {
             },
+            contributors: [
+                {
+                    name: "Gustavo Zapella",
+                    github: ""
+                },
+                {
+                    name: "Otavio Sant",
+                    github: ""
+                },
+                {
+                    name: "Henrique Cole",
+                    github: ""
+                }
+            ]
         },
         {
             id: 5,
             name: "SEED - Frontend",
             githubLink: "https://github.com/SID-Organization/SEED-Project-Frontend",
-            stack: [],
+            stack: [StackIcons.react, StackIcons.tailwindcss, StackIcons.materialui, StackIcons.vscode, StackIcons.jira, StackIcons.figma],
             cardImg: "",
             description: <p>Informations will be added soon</p>,
             popupSection: {

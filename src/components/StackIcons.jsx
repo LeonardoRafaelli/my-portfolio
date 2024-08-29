@@ -15,11 +15,21 @@ import figmaOriginal from '../assets/stackIcons/figma-original.svg';
 import llvmOriginal from '../assets/stackIcons/llvm-original.svg';
 import springOriginal from '../assets/stackIcons/spring-original.svg';
 import springWordmark from '../assets/stackIcons/spring-original-wordmark.svg';
-import mysqlOriginal from '../assets/stackIcons/mysql-original.svg'
-import mysqlWordmark from '../assets/stackIcons/mysql-original-wordmark.svg'
-import dockerOriginal from '../assets/stackIcons/docker-original.svg'
-import dockerWordmark from '../assets/stackIcons/docker-original-wordmark.svg'
-import awsWordmark from '../assets/stackIcons/amazonwebservices-original-wordmark.svg'
+import mysqlOriginal from '../assets/stackIcons/mysql-original.svg';
+import mysqlWordmark from '../assets/stackIcons/mysql-original-wordmark.svg';
+import dockerOriginal from '../assets/stackIcons/docker-original.svg';
+import dockerWordmark from '../assets/stackIcons/docker-original-wordmark.svg';
+import awsWordmark from '../assets/stackIcons/amazonwebservices-original-wordmark.svg';
+import mavenOriginal from '../assets/stackIcons/maven-original.svg';
+import mavenWordmark from '../assets/stackIcons/maven-original-wordmark.svg';
+import intelliJOriginal from '../assets/stackIcons/intellij-original.svg';
+import vscodeOriginal from '../assets/stackIcons/vscode-original.svg';
+import vscodeWordmark from '../assets/stackIcons/vscode-original-wordmark.svg';
+import visualStudioOriginal from '../assets/stackIcons/visualstudio-original.svg';
+import visualStudioWordmark from '../assets/stackIcons/visualstudio-original-wordmark.svg';
+import materialuiOriginal from '../assets/stackIcons/materialui-original.svg';
+import jiraOriginal from '../assets/stackIcons/jira-original.svg';
+import jiraWordmark from '../assets/stackIcons/jira-original-wordmark.svg';
 
 const StackIcons = {
     java: {
@@ -84,7 +94,35 @@ const StackIcons = {
     aws: {
         title: "AWS - Amazon Web Services",
         original: awsWordmark
-    }
+    },
+    maven: {
+        title: "Maven",
+        original: mavenOriginal,
+        wordkmark: mavenWordmark
+    },
+    intellij: {
+        title: "IntelliJ IDEA",
+        original: intelliJOriginal
+    },
+    vscode: {
+        title: "VSCode IDEA",
+        original: vscodeOriginal,
+        wordmark: vscodeWordmark
+    },
+    visualstudio: {
+        title: "Visual Studio IDEA",
+        original: visualStudioOriginal,
+        wordmark: visualStudioWordmark
+    },
+    materialui: {
+        title: "Material UI",
+        original: materialuiOriginal
+    },
+    jira: {
+        title: "Jira Project Management",
+        original: jiraOriginal,
+        wordmark: jiraWordmark
+    },
 }
 
 export default StackIcons
