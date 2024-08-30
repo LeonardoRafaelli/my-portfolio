@@ -31,6 +31,7 @@ export default function ProjectPopup({children}) {
             rounded-lg
             shadow-2xl
             w-[50%]
+            sm:w-[90%]
             max-h-[90%]
             overflow-y-scroll'
             >
