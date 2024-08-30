@@ -25,7 +25,7 @@ const MyProjects =
             githubLink: "https://github.com/LeonardoRafaelli/my-portfolio",
             stack: [StackIcons.react, StackIcons.tailwindcss, StackIcons.vercel, StackIcons.vscode],
             cardImg: myPortfolio1,
-            description: <p>For the porpouse of making it easier to show what I'm capable of and all the projects I have already done, I finally decided to code my own portfolio and make it a project out of it. &#x1f917;</p>,
+            description: <p>For the purpouse of making it easier to show what I'm capable of and all the projects I have already done, I finally decided to code my own portfolio and make it a project out of it. &#x1f917;</p>,
             popupSection: {
                 imgs: [myPortfolio1, myPortfolio3, myPortfolio2],
                 texts: [
@@ -126,6 +126,20 @@ const MyProjects =
             description: <p>Informations will be added soon</p>,
             popupSection: {
             },
+            contributors: [
+                {
+                    name: "Gustavo Zapella",
+                    github: ""
+                },
+                {
+                    name: "Otavio Sant",
+                    github: ""
+                },
+                {
+                    name: "Henrique Cole",
+                    github: ""
+                }
+            ]
         },
         {
             id: 6,
