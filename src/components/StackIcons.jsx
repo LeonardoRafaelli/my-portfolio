@@ -30,6 +30,10 @@ import visualStudioWordmark from '../assets/stackIcons/visualstudio-original-wor
 import materialuiOriginal from '../assets/stackIcons/materialui-original.svg';
 import jiraOriginal from '../assets/stackIcons/jira-original.svg';
 import jiraWordmark from '../assets/stackIcons/jira-original-wordmark.svg';
+import yamlOriginal from '../assets/stackIcons/yaml-original.svg';
+
+import html5Wordmark from '../assets/stackIcons/html5-original-wordmark.svg';
+import html5Original from '../assets/stackIcons/html5-original.svg';
 
 const StackIcons = {
     java: {
@@ -122,6 +126,15 @@ const StackIcons = {
         title: "Jira Project Management",
         original: jiraOriginal,
         wordmark: jiraWordmark
+    },
+    yaml: {
+        title: "Yaml",
+        original: yamlOriginal
+    },
+    html5: {
+        title: "HTML5",
+        original: html5Original,
+        wordmark: html5Wordmark
     },
 }
 

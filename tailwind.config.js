@@ -14,7 +14,7 @@ export default {
       'darkgray': '#231E25',
       'opacdark': '#46454a',
 
-      'link': '#1e40af',
+      'link': '#6ea0ff',
     },
     extend: {
       fontFamily: {

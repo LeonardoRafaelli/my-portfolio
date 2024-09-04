@@ -42,6 +42,8 @@ export default function PopupSectionImgs({ imgs }) {
                             key={index}
                             className={`
                             absolute
+                            flex
+                            justify-center
                             inset-0
                             transition-transform
                             duration-500
@@ -50,7 +52,7 @@ export default function PopupSectionImgs({ imgs }) {
                             `}
                         >
                             <img src={imgSrc} 
-                                className="object-cover rounded-lg cursor-zoom-in"
+                                className="object-cover h-full rounded-lg cursor-zoom-in"
                                 onClick={() => setImgSrcZoomed(imgSrc)}
                             />
                         </div>

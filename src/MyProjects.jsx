@@ -1,5 +1,6 @@
 
 import StackIcons from "./components/StackIcons"
+import Contributors from "./components/Contributors"
 //IMGS
 // MyPortfolio
 import myPortfolio1 from "./assets/myPortfolio/myportfolio-ui.png"
@@ -16,6 +17,14 @@ import mvPic3 from './assets/myVocabulary/pic-learn.png'
 import mvPic4 from './assets/myVocabulary/pic-learnnotblur.png'
 import mvPic5 from './assets/myVocabulary/pic-database.png'
 import mvPic6 from './assets/myVocabulary/pic-aws.png'
+// React To Survive
+import rtsPic1 from './assets/reactToSurvive/rtsPic1-welcomePage.png'
+import rtsPic2 from './assets/reactToSurvive/rtsPic2-gameplay.png'
+import rtsPic3 from './assets/reactToSurvive/rtsPic3-ranking.png'
+// AR-Puzzle
+import arPuzzlePic1 from './assets/arPuzzle/startScreen.png'
+import arPuzzlePic2 from './assets/arPuzzle/firstPuzzleImg.jpeg'
+import arPuzzlePic3 from './assets/arPuzzle/secondPuzzleImg.jpeg'
 
 const MyProjects =
     [
@@ -27,7 +36,7 @@ const MyProjects =
             cardImg: myPortfolio1,
             description: <p>For the purpouse of making it easier to show what I'm capable of and all the projects I have already done, I finally decided to code my own portfolio and make it a project out of it. &#x1f917;</p>,
             popupSection: {
-                imgs: [myPortfolio1, myPortfolio3, myPortfolio2],
+                imgs: [myPortfolio2, myPortfolio1, myPortfolio3],
                 texts: [
                     {
                         sectionTitle: "Development",
@@ -102,20 +111,7 @@ const MyProjects =
             description: <p>Informations will be added soon</p>,
             popupSection: {
             },
-            contributors: [
-                {
-                    name: "Gustavo Zapella",
-                    github: ""
-                },
-                {
-                    name: "Otavio Sant",
-                    github: ""
-                },
-                {
-                    name: "Henrique Cole",
-                    github: ""
-                }
-            ]
+            contributors: [Contributors.hc, Contributors.os, Contributors.gz]
         },
         {
             id: 5,
@@ -126,26 +122,13 @@ const MyProjects =
             description: <p>Informations will be added soon</p>,
             popupSection: {
             },
-            contributors: [
-                {
-                    name: "Gustavo Zapella",
-                    github: ""
-                },
-                {
-                    name: "Otavio Sant",
-                    github: ""
-                },
-                {
-                    name: "Henrique Cole",
-                    github: ""
-                }
-            ]
+            contributors: [Contributors.hc, Contributors.os, Contributors.gz]
         },
         {
             id: 6,
             name: "Spring PayPal Integration",
             githubLink: "https://github.com/LeonardoRafaelli/spring-paypal-integration",
-            stack: [],
+            stack: [StackIcons.java, StackIcons.spring, StackIcons.yaml, StackIcons.intellij],
             cardImg: "",
             description: <p>Informations will be added soon</p>,
             popupSection: {
@@ -156,28 +139,45 @@ const MyProjects =
             name: "React to Survive",
             githubLink: "https://github.com/HenriqueCole/react-to-survive",
             outsideLink: "https://react-to-survive.vercel.app",
-            stack: [],
-            cardImg: "",
-            description: <p>Informations will be added soon</p>,
+            stack: [StackIcons.react, StackIcons.vscode],
+            cardImg: rtsPic2,
+            description: <p>This project was really really fun to code, mainly because Henrique and I were coding with <i>Live Share</i> and also building the sprite graphics with <a href="https://www.piskelapp.com/"><i className="underline">Piskel</i></a>. React To Survive was the first game with movements that I ever coded, it really helped me to understand and use concepts such as hitbox, screenlimit and so on.</p>,
             popupSection: {
+                imgs: [rtsPic1, rtsPic2, rtsPic3],
+                texts: [
+                    {
+                        sectionTitle: "How it works",
+                        sectionParagraphs: []
+                    },
+                    {
+                        sectionTitle: "Development",
+                        sectionParagraphs: [
+                            <p>Developed mainly with ReactJS, due to being the framework we were deeping in, this project took us around 1 week to finish it. We also used another hosted project to store the images from the AR, you can find the repo <a href="https://github.com/HenriqueCole/camera_ra" className="underline" target="_blank">here</a></p>,
+                            <p>This game, helped a lot to develop logical thinking, since we didn't use any refence to build it.</p>
+                        ]
+                    }
+                ]
             },
+            contributors: [Contributors.hc]
         },
         {
             id: 8,
-            name: "RA Puzzle",
+            name: "AR Puzzle",
             githubLink: "https://github.com/LeonardoRafaelli/ra-scaperoom/",
             outsideLink: "https://ra-enigma.vercel.app/",
-            stack: [],
-            cardImg: "",
+            stack: [StackIcons.react, StackIcons.vscode, StackIcons.html5],
+            cardImg: arPuzzlePic2,
             description: <p>Informations will be added soon</p>,
             popupSection: {
+                imgs: [arPuzzlePic1, arPuzzlePic2, arPuzzlePic3]
             },
+            contributors: [Contributors.hc, Contributors.tb]
         },
-        
     ]
 
+
+
 // TEMPLATE
-// TODO: Add Contributors to the projects
 // {
 //     id: 1,
 //     name: "",
@@ -185,13 +185,9 @@ const MyProjects =
 //     outsideLink: "",
 //     stack: [StackIcons.react],
 //     cardImg: myPortfolio1,
-//     description: <p>After applying for don't know how many jobs as 
-//     Back/Front/Fullstack/Java/React/C# Developer and so on and
-//     not getting a single chance to show what I'm capable of,
-//     I finally decided to create my own portfolio site, so I could include it in my Resume
-//     and no more words would be needed to be said to prove my hard skills. &#x1f917;</p>,
+//     description: <p></p>,
 //     popupSection: {
-//         imgs: [myPortfolio1, myPortfolio3, myPortfolio2],
+//         imgs: [myPortfolio1],
 //         videoUrl: "https://www.youtube-nocookie.com/embed/6NvXdmYXeQ4?si=jDpdhewj8STvn4uF",
 //         texts: [
 //             {
@@ -203,6 +199,9 @@ const MyProjects =
 //             }
 //         ],
 //     },
+//     contributors: [
+//          {name: "", github:""}
+//     ]
 // },
 
 export default MyProjects;

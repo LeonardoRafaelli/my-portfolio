@@ -9,6 +9,7 @@ import linkIcon from "../assets/external-link-icon.png";
 
 import MyProjects from "../MyProjects";
 import LinkImg from "./LinkImg";
+import PopupSectionContributors from "./PopupSectionContributors";
 
 export default function Projects() {
 
@@ -48,6 +49,7 @@ export default function Projects() {
                             <CardStackIcons stack={project.stack} isInPopup={true} />
                         </div>
                     )}
+                    {project.contributors && <PopupSectionContributors contributors={project.contributors} />}
                 </ProjectPopup>
             </ProjectCard>
         ))}
