@@ -15,7 +15,7 @@ export default function Header({switchAppTheme, appTheme}) {
             justify-between
             "
         >
-            <div className="flex-1 pl-6 flex items-center font-signature text-xl font-bold">
+            <div className="flex-1 pl-6 flex items-center text-dark dark:text-light text-xl">
                 Leonardo Rafaelli
             </div>
             <div className="flex-1 flex items-center justify-center gap-4">

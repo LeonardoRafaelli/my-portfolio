@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react'
 import Header from './components/Header.jsx';
 import MyProjects from './components/Projects.jsx';
 
-import StackIcons from './components/StackIcons.jsx';
-
 function App() {
   const [appTheme, setAppTheme] = useState('light');
 
