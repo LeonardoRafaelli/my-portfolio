@@ -147,14 +147,12 @@ const MyProjects =
                 texts: [
                     {
                         sectionTitle: "How it works",
-                        sectionParagraphs: []
+                        sectionParagraphs: [
+                            <p>It's actually really simple and a bit nonnsense 😂, but anyway, the goal is to brake all the arrows that are falling with your knight (which is your mouse), as the time goes by, it gets harder and more cave mans start to appear. The background changes each minute to show the user that you've reached a new level of complexity. Enjoy :)</p>]
                     },
                     {
                         sectionTitle: "Development",
-                        sectionParagraphs: [
-                            <p>Developed mainly with ReactJS, due to being the framework we were deeping in, this project took us around 1 week to finish it. We also used another hosted project to store the images from the AR, you can find the repo <a href="https://github.com/HenriqueCole/camera_ra" className="underline" target="_blank">here</a></p>,
-                            <p>This game, helped a lot to develop logical thinking, since we didn't use any refence to build it.</p>
-                        ]
+                        sectionParagraphs: [<p>Developed in ReactJS, this project was the first game with 'movement' that I took part in the development. With just simple ideas of how to make elements hit each other in HTML, CSS and JS, we started slowly to create this game, which is valuable to say, that helped a lot to develop our logical thinking, since we didn't use any refence to build it.</p>]
                     }
                 ]
             },
@@ -167,9 +165,19 @@ const MyProjects =
             outsideLink: "https://ra-enigma.vercel.app/",
             stack: [StackIcons.react, StackIcons.vscode, StackIcons.html5],
             cardImg: arPuzzlePic2,
-            description: <p>Informations will be added soon</p>,
+            description: <p>Critical thinking, the only way we get to proof things, and not just simply accept it. Therefore, puzzles that requires you to <b>think outside the box</b> always attracted me. During my IT course we were asked to create something with Augmented Reality, and without thinking to much, me and I friend quickly decided to create a puzzle. That was when this project was born. You can access the game clicking on the icon beside the title. <br/> obs. the game still in portuguese, so it might be a bit harder to solve it, if you can't speak portuguese, or you can consider it part of the puzzle. Enjoy :)</p>,
             popupSection: {
-                imgs: [arPuzzlePic1, arPuzzlePic2, arPuzzlePic3]
+                imgs: [arPuzzlePic1, arPuzzlePic2, arPuzzlePic3],
+                texts: [
+                    {
+                        sectionTitle: "Development",
+                        sectionParagraphs: [
+                            <p>Developed mainly with ReactJS, due to being the framework we were diving in, this project took us around 1 week to finish it. We also used another hosted project to store the images from the AR, you can find the repo <a href="https://github.com/HenriqueCole/camera_ra" className="underline" target="_blank">here</a></p>,
+                            <p>For the AR part, we used a Web Framework for building 3D/AR/VR experiences, called <a href="https://aframe.io/" className="underline" target="_blank"><i>A-FRAME</i></a>.</p>,
+                            
+                        ]
+                    }
+                ]
             },
             contributors: [Contributors.hc, Contributors.tb]
         },
