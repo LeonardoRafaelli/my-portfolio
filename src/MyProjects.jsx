@@ -34,7 +34,7 @@ const MyProjects =
             githubLink: "https://github.com/LeonardoRafaelli/my-portfolio",
             stack: [StackIcons.react, StackIcons.tailwindcss, StackIcons.vercel, StackIcons.vscode],
             cardImg: myPortfolio1,
-            description: <p>For the purpouse of making it easier to show what I'm capable of and all the projects I have already done, I finally decided to code my own portfolio and make it a project out of it. &#x1f917;</p>,
+            description: <p>For the purpouse of making it easier to show what I'm capable of and some of the the projects I have already done, I finally decided to code my own portfolio and make a project out of it.</p>,
             popupSection: {
                 imgs: [myPortfolio2, myPortfolio1, myPortfolio3],
                 texts: [
@@ -44,7 +44,7 @@ const MyProjects =
                             <p>Developed in 3 days of relaxing coding, the project <i>MyPortfolio</i> was
                                 designed to be simple and focus only on the projects made by myself and their
                                 informations, however, along the way I thought: "why don't I make it possible and easy
-                                so other people can also use it?&#x1f914;".</p>,
+                                so other people can also use it?".</p>,
                             <p><b>So, I did it.</b> Still not so simple as just inputing your data, but with a bit of knowledge
                                 of how JSONs, React and Git work, anyone can use it.</p>,
                             <p>It's only necessary to clone <a className="underline" href="https://github.com/LeonardoRafaelli/my-portfolio/">my repo</a> at the <i>start</i> branch,
@@ -85,7 +85,7 @@ const MyProjects =
             githubLink: "https://github.com/LeonardoRafaelli/my-portfolio",
             stack: [StackIcons.java, StackIcons.spring, StackIcons.maven, StackIcons.mysql, StackIcons.docker, StackIcons.aws, StackIcons.intellij],
             cardImg: mvPic1,
-            description: <p>This project was one of which I had most fun coding it. It started as an idea to make an app for myself, that would <i>help me in some of my activities</i>. As by the time I coded this project I was studying german (which I still do, and will probably do forever &#128514;), I decided to make an app for the need to learn german and this was the outcome. &#128516;</p>,
+            description: <p>This project was one of which I had most fun coding it. It started as an idea to make an app for myself, that would <i>help me in some of my activities</i>. As by the time I coded this project I was studying german (which I still do, and will probably do forever), I decided to make an app for the need to learn german and this was the outcome.</p>,
             popupSection: {
                 imgs: [mvPic2, mvPic3, mvPic4, mvPic5, mvPic6, mvPic1],
                 videoUrl: "https://www.youtube.com/embed/P5Yvi1E0QLI?si=iRx9TRNeF4rT8dob",
@@ -148,7 +148,7 @@ const MyProjects =
                     {
                         sectionTitle: "How it works",
                         sectionParagraphs: [
-                            <p>It's actually really simple and a bit nonnsense 😂, but anyway, the goal is to brake all the arrows that are falling with your knight (which is your mouse), as the time goes by, it gets harder and more cave mans start to appear. The background changes each minute to show the user that you've reached a new level of complexity. Enjoy :)</p>]
+                            <p>It's actually really simple and maybe a bit nonnsense, but anyway, the goal is to brake all the arrows that are falling with your knight (which is your mouse), as the time goes by, it gets harder and more cave mans start to appear. The background changes each minute to show the user that you've reached a new level of complexity. Enjoy :)</p>]
                     },
                     {
                         sectionTitle: "Development",
