@@ -25,6 +25,9 @@ import rtsPic3 from './assets/reactToSurvive/rtsPic3-ranking.png'
 import arPuzzlePic1 from './assets/arPuzzle/startScreen.png'
 import arPuzzlePic2 from './assets/arPuzzle/firstPuzzleImg.jpeg'
 import arPuzzlePic3 from './assets/arPuzzle/secondPuzzleImg.jpeg'
+// SEED - Backend
+import seedBePic1 from './assets/SEEDBackend/sbe-pic1-authConfig.png'
+import seedBePic2 from './assets/SEEDBackend/sbe-pic2-ataController.png'
 
 const MyProjects =
     [
@@ -70,9 +73,9 @@ const MyProjects =
                         sectionTitle: "Development",
                         sectionParagraphs: [
                             <p>During the development of the FileWatcher, I was studying software usability
-                            in the Information System Programming Apprenticeship course, therefore, the
-                            hole design was a match of trying to make the most usable and
-                            user-friendly screen, applying my new knowledges, and learning how to code with .NET.</p>,
+                                in the Information System Programming Apprenticeship course, therefore, the
+                                hole design was a match of trying to make the most usable and
+                                user-friendly screen, applying my new knowledges, and learning how to code with .NET.</p>,
 
                         ],
                     }
@@ -96,7 +99,7 @@ const MyProjects =
                             <p>The development was pretty flowed 	&#x1f468;&#x200d;&#x1f4bb; , I already knew all the tools I was about to use, except for AWS.</p>,
                             <p>Coding this project, as I used no front-end framework, I reeinforced a lot my knowledge in <b>Spring Security and Thymeleaf.</b></p>,
                             <p>Also, I could understand a lot more how AWS works, services and terms such <b>EC2</b> (Elastic Cloud), <b>RDS</b> (Relational Database Service) and their instances. It was <i>100%</i> worth to dive in my ideas and code this project.</p>,
-                            
+
                         ],
                     }
                 ],
@@ -107,9 +110,30 @@ const MyProjects =
             name: "SEED - Backend",
             githubLink: "https://github.com/SID-Organization/SEED-Project-Backend",
             stack: [StackIcons.java, StackIcons.spring, StackIcons.maven, StackIcons.mysql, StackIcons.intellij],
-            cardImg: "",
-            description: <p>Informations will be added soon</p>,
+            cardImg: seedBePic2,
+            description: <p>This project was the longest and most <b>valuable project</b> I've took part in so far. Developed for the company WEG S.A., three friends and I took 1 year and a half to finish it, both back and the front-end (which due to the size, I splited in the portfolio in 2 projects).</p>,
             popupSection: {
+                videoUrl: "https://www.youtube.com/embed/UlAvhSIV8fc?si=ZI597cPTbcRDWGYF",
+                texts: [
+                    {
+                        sectionTitle: "Project Goal",
+                        sectionParagraphs: [<p>Informations will be added soon</p>]
+                    },
+                    {
+                        sectionTitle: "Workflow explained",
+                        sectionParagraphs: [<p>Informations will be added soon</p>]
+                    },
+                    {
+                        sectionTitle: "Development",
+                        sectionParagraphs: [<p>It was a very complex project since we had to code from zero to hero and also following of course all the business rules for this project. Along the way we used different type of tools to organize ourselfs and mainly to maintain the communication <i>(which we learn it's one of the most important things during a project development)</i> between the back-end and the front-end developers.</p>]
+                    },
+                    {
+                        sectionTitle: "Team Splitting",
+                        sectionParagraphs: [<p>Very on the beginning of the project, we were meant to rotate our responsabilites and assume other places on the development of the project, so the ones coding the BE, would have to assume the FE development and vice-versa. But as expected, it does really worked, since you'd have to forget your new feature development to dive in another one complete different, leading to time waste and mess.</p>,
+                        <p><b>So after a while</b>, knowing that Gustavo and Otavio were BE devs and Henrique FE dev, we decided that we would split in to two teams. Considering myself a full-stack developer, I ended up joining the FE, even tough I'd have really liked to stay in the BE development and deal with our API.</p>,
+                        <p><b>Furthermore</b>, even splitted in teams, we were always on the same side, meaning that a BE problem could also be solved by the FE devs or vice-versa, making this project a really successful teamwork.</p>]
+                    }
+                ]
             },
             contributors: [Contributors.hc, Contributors.os, Contributors.gz]
         },
@@ -165,7 +189,7 @@ const MyProjects =
             outsideLink: "https://ra-enigma.vercel.app/",
             stack: [StackIcons.react, StackIcons.vscode, StackIcons.html5],
             cardImg: arPuzzlePic2,
-            description: <p>Critical thinking, the only way we get to proof things, and not just simply accept it. Therefore, puzzles that requires you to <b>think outside the box</b> always attracted me. During my IT course we were asked to create something with Augmented Reality, and without thinking to much, me and I friend quickly decided to create a puzzle. That was when this project was born. You can access the game clicking on the icon beside the title. <br/> obs. the game still in portuguese, so it might be a bit harder to solve it, if you can't speak portuguese, or you can consider it part of the puzzle. Enjoy :)</p>,
+            description: <p>Critical thinking, the only way we get to proof things, and not just simply accept it. Therefore, puzzles that requires you to <b>think outside the box</b> always attracted me. During my IT course we were asked to create something with Augmented Reality, and without thinking to much, me and I friend quickly decided to create a puzzle. That was when this project was born. You can access the game clicking on the icon beside the title. <br /> obs. the game still in portuguese, so it might be a bit harder to solve it, if you can't speak portuguese, or you can consider it part of the puzzle. Enjoy :)</p>,
             popupSection: {
                 imgs: [arPuzzlePic1, arPuzzlePic2, arPuzzlePic3],
                 texts: [
@@ -174,7 +198,7 @@ const MyProjects =
                         sectionParagraphs: [
                             <p>Developed mainly with ReactJS, due to being the framework we were diving in, this project took us around 1 week to finish it. We also used another hosted project to store the images from the AR, you can find the repo <a href="https://github.com/HenriqueCole/camera_ra" className="underline" target="_blank">here</a></p>,
                             <p>For the AR part, we used a Web Framework for building 3D/AR/VR experiences, called <a href="https://aframe.io/" className="underline" target="_blank"><i>A-FRAME</i></a>.</p>,
-                            
+
                         ]
                     }
                 ]
