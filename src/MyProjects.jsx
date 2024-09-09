@@ -116,7 +116,7 @@ const MyProjects =
                 videoUrl: "https://www.youtube.com/embed/UlAvhSIV8fc?si=ZI597cPTbcRDWGYF",
                 texts: [
                     {
-                        sectionTitle: "Project Goal",
+                        sectionTitle: "Project Goal/Idea",
                         sectionParagraphs: [<p>Informations will be added soon</p>]
                     },
                     {
