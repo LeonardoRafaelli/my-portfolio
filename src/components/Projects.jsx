@@ -43,6 +43,7 @@ export default function Projects() {
                     {project.popupSection.imgs && <PopupSectionImgs imgs={project.popupSection.imgs} />}
                     {project.popupSection.texts && <PopupSectionTexts texts={project.popupSection.texts} />}
                     {project.popupSection.videoUrl && <PopupSectionVideo videoUrl={project.popupSection.videoUrl} />}
+                    
                     {project.stack.length > 0 && (
                         <div>
                             <h2>Project Stack</h2>

@@ -28,6 +28,7 @@ import arPuzzlePic3 from './assets/arPuzzle/secondPuzzleImg.jpeg'
 // SEED - Backend
 import seedBePic1 from './assets/SEEDBackend/sbe-pic1-authConfig.png'
 import seedBePic2 from './assets/SEEDBackend/sbe-pic2-ataController.png'
+import seedBePic3 from './assets/SEEDBackend/sbe-pic3-workflow.png'
 
 const MyProjects =
     [
@@ -109,19 +110,23 @@ const MyProjects =
             id: 4,
             name: "SEED - Backend",
             githubLink: "https://github.com/SID-Organization/SEED-Project-Backend",
-            stack: [StackIcons.java, StackIcons.spring, StackIcons.maven, StackIcons.mysql, StackIcons.intellij],
+            stack: [StackIcons.java, StackIcons.spring, StackIcons.jwt, StackIcons.maven, StackIcons.mysql, StackIcons.intellij],
             cardImg: seedBePic2,
-            description: <p>This project was the longest and most <b>valuable project</b> I've took part in so far. Developed for the company WEG S.A., three friends and I took 1 year and a half to finish it, both back and the front-end (which due to the size, I splited in the portfolio in 2 projects).</p>,
+            description: <p>This project was the longest and most <b>valuable project</b> I've took part in so far. Developed for the company WEG S.A., three friends and I took 1 year and a half to finish it, both back and front-end (which due to the size, I splited in the portfolio in 2 projects).</p>,
             popupSection: {
                 videoUrl: "https://www.youtube.com/embed/UlAvhSIV8fc?si=ZI597cPTbcRDWGYF",
+
                 texts: [
                     {
-                        sectionTitle: "Project Goal / Idea",
-                        sectionParagraphs: [<p>Informations will be added soon</p>]
+                        sectionTitle: "Goal / Idea",
+                        sectionParagraphs: [<p>For this project we received an <i>8 page PDF</i> explaining the idea of the project and what was the outcome expected by the company, which I'll be simplifying here.</p>,
+                        <p>Using the KAIZEN ideal of continuous improvement, the idea of the project was to allow all employees with access to the company's online services to have the opportunity to suggest improvements in their respective departments. After the suggestion input (which we will call here "ticket"), this, would be analyzed, classified, approved, and executed through a workflow (available below).</p>,
+                        <p>Thus, by combining KAIZEN with automation, the company would have a solid system for continuous improvements.</p>
+                        ]
                     },
                     {
-                        sectionTitle: "Workflow explained",
-                        sectionParagraphs: [<p>Informations will be added soon</p>]
+                        sectionTitle: "Workflow",
+                        sectionImg: seedBePic3,
                     },
                     {
                         sectionTitle: "Development",

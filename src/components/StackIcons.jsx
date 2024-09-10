@@ -31,9 +31,9 @@ import materialuiOriginal from '../assets/stackIcons/materialui-original.svg';
 import jiraOriginal from '../assets/stackIcons/jira-original.svg';
 import jiraWordmark from '../assets/stackIcons/jira-original-wordmark.svg';
 import yamlOriginal from '../assets/stackIcons/yaml-original.svg';
-
 import html5Wordmark from '../assets/stackIcons/html5-original-wordmark.svg';
 import html5Original from '../assets/stackIcons/html5-original.svg';
+import jwtWordmark from '../assets/stackIcons/jwt-wordmark.png';
 
 const StackIcons = {
     java: {
@@ -136,6 +136,10 @@ const StackIcons = {
         original: html5Original,
         wordmark: html5Wordmark
     },
+    jwt: {
+        title: "JSON Web Token",
+        original: jwtWordmark
+    }
 }
 
 export default StackIcons
