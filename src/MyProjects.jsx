@@ -29,6 +29,8 @@ import arPuzzlePic3 from './assets/arPuzzle/secondPuzzleImg.jpeg'
 import seedBePic1 from './assets/SEEDBackend/sbe-pic1-authConfig.png'
 import seedBePic2 from './assets/SEEDBackend/sbe-pic2-ataController.png'
 import seedBePic3 from './assets/SEEDBackend/sbe-pic3-workflow.png'
+// SEED - Frontend
+import seedFePic1 from './assets/SEEDFrontend/seedFE-login.png'
 
 const MyProjects =
     [
@@ -120,7 +122,7 @@ const MyProjects =
                     {
                         sectionTitle: "Goal / Idea",
                         sectionParagraphs: [<p>For this project we received an <i>8 page PDF</i> explaining the idea of the project and what was the outcome expected by the company, which I'll be simplifying here.</p>,
-                        <p>Using the KAIZEN ideal of continuous improvement, the idea of the project was to allow all employees with access to the company's online services to have the opportunity to suggest improvements in their respective departments. After the suggestion input (which we will call here "ticket"), this, would be analyzed, classified, approved, and executed through a workflow (available below).</p>,
+                        <p>Using the <i>KAIZEN</i> ideal of <b>continuous improvement</b>, the idea of the project was to allow all employees with access to the company's online services to have the opportunity to suggest improvements in their respective departments. After the suggestion input (which we will call here "ticket"), this, would be analyzed, classified, approved, and executed through a workflow (available below).</p>,
                         <p>Thus, by combining KAIZEN with automation, the company would have a solid system for continuous improvements.</p>
                         ]
                     },
@@ -147,9 +149,10 @@ const MyProjects =
             name: "SEED - Frontend",
             githubLink: "https://github.com/SID-Organization/SEED-Project-Frontend",
             stack: [StackIcons.react, StackIcons.tailwindcss, StackIcons.materialui, StackIcons.vscode, StackIcons.jira, StackIcons.figma],
-            cardImg: "",
+            cardImg: seedFePic1,
             description: <p>Informations will be added soon</p>,
             popupSection: {
+                videoUrl: "https://www.youtube.com/embed/QNudzz2LFag?si=GgDuAjkM_rYR-v0v",
             },
             contributors: [Contributors.hc, Contributors.os, Contributors.gz]
         },
