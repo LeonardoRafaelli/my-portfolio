@@ -221,10 +221,7 @@ const MyProjects =
             cardImg: "",
             description: <p>In development</p>,
             popupSection: {
-                imgs: [],
-                texts: [
-
-                ]
+                
             },
         },
     ]
