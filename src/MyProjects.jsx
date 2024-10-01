@@ -217,7 +217,7 @@ const MyProjects =
             id: 9,
             name: "Airbnb Clone",
             githubLink: "https://github.com/LeonardoRafaelli/airbnb-clone",
-            stack: [StackIcons.java, StackIcons.spring, StackIcons.postgresql, StackIcons.angular],
+            stack: [StackIcons.java, StackIcons.spring, StackIcons.yaml, StackIcons.postgresql, StackIcons.angular, StackIcons.intellij],
             cardImg: "",
             description: <p>In development</p>,
             popupSection: {
