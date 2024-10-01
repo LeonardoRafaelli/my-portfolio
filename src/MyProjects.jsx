@@ -213,6 +213,20 @@ const MyProjects =
             },
             contributors: [Contributors.hc, Contributors.tb]
         },
+        {
+            id: 9,
+            name: "Airbnb Clone",
+            githubLink: "https://github.com/LeonardoRafaelli/airbnb-clone",
+            stack: [StackIcons.java, StackIcons.spring, StackIcons.postgresql, StackIcons.angular],
+            cardImg: "",
+            description: <p>In development</p>,
+            popupSection: {
+                imgs: [],
+                texts: [
+
+                ]
+            },
+        },
     ]
 
 

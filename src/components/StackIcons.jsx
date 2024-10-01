@@ -34,6 +34,10 @@ import yamlOriginal from '../assets/stackIcons/yaml-original.svg';
 import html5Wordmark from '../assets/stackIcons/html5-original-wordmark.svg';
 import html5Original from '../assets/stackIcons/html5-original.svg';
 import jwtWordmark from '../assets/stackIcons/jwt-wordmark.png';
+import angularOriginal from '../assets/stackIcons/angular-original.svg'
+import angularWordmark from '../assets/stackIcons/angular-original-wordmark.svg'
+import postgreSqlOriginal from '../assets/stackIcons/postgresql-original.svg'
+import posgreSqlWordmark from '../assets/stackIcons/postgresql-original-wordmark.svg'
 
 const StackIcons = {
     java: {
@@ -139,7 +143,17 @@ const StackIcons = {
     jwt: {
         title: "JSON Web Token",
         original: jwtWordmark
-    }
+    },
+    angular: {
+        title: "Angular Framework",
+        original: angularOriginal,
+        wordmark: angularWordmark
+    },
+    postgresql: {
+        title: "PostreSQL",
+        original: postgreSqlOriginal,
+        wordmark: posgreSqlWordmark
+    },
 }
 
 export default StackIcons
